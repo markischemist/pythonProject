@@ -36,11 +36,6 @@
 # print (first_number % second_number)
 # print (first_number * second_number)
 
-# Vm = 22.4
-# n = int(input('Введите количество в-ва: '))
-# V = Vm*n
-# print('V =', V)
-
 #3 ПАРА
 # lst = [1, 2, 3.14, 'Hi', True]
 # print(lst[0])
@@ -69,33 +64,15 @@
 #4 ПАРА
 # def - определение, нужно писать перед началом кастомной функции, пробел, название функции(say_hi), в скобках аргумент
 #все что под названием функции - это тело функции
-def say_hi(name):
-    print(f'Hello {name}')
-#чтобы вызвать функцию, нужно написать ее название
-say_hi('Maria')
+# def say_hi(name):
+#     print(f'Hello {name}')
+# #чтобы вызвать функцию, нужно написать ее название
+# say_hi('Maria')
 
-def summ(num_1, num_2):
-    print(num_1 + num_2)
-summ(2,4)
-
-def sub(num1, num2):
-    print(num1 - num2)
-sub(8, 2)
-
-def mult(number1, number2):
-    print(number1 * number2)
-mult(3,2)
-
-def div(number_1, number_2):
-    if number_2 == 0:
-        print('Сходи к врачу')
-    else:
-        print(number_1 / number_2)
-div(6, 1)
-
-def div(number_11, number_21):
-    try:
-        print(number_11/number_21)
-    except ZeroDivisionError:
-        print('Сходи к врачу')
-div(12, 2)
+#5 и 6 ПАРА (подключили гитхаб)
+def double(number):
+    return 2 * number
+result1 = double(4)  # result1 = 8
+result2 = double(5)  # result2 = 10
+print(f"result1 = {result1}")  # result1 = 8
+print(f"result2 = {result2}")  # result2 = 10
