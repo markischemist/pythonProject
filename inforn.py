@@ -5,45 +5,18 @@
 
 #КАКИЕ-ТО ПРОСТО ЗАПИСИ ДЛЯ ТУПЫХ
 #красная точка это по сути остановка кода, там, где мы хотим. Нужно нажать на строку кода
-#Операторы - участники выражения, которые проводят операцию
-#Операнды - участники выражения, над которыми проводиться операция
-#необходимо использовать нормальные адекватные названия, которые содржат то, чем названа переменная
-#нельзя начинать название переменной с цифры!!!
+#Операторы - участники выражения, которые проводят операцию; Операнды - участники выражения, над которыми проводиться операция
+#необходимо использовать нормальные адекватные названия, которые содержат то, чем названа переменная; нельзя начинать название переменной с цифры!!!
 #ТИПЫ ДАННЫХ: строка(str), плавающая запятая(float), цифры(int), booleran(bool, true/false)
 #print, list, dict, set, pass, break, raise НЕ ИСПОЛЬЗОВАТЬ В КАЧЕСТВЕ НАЗВАНИЯ ЭЛЕМЕНТА
 #Конкатенация строк в Python — это операция соединения двух или более строк в одну
-#Цифры можно складывать, делить, умножать, вычитать
-#Строки можно только складывать! Строки и цифры складывать нельзя
+#Цифры можно складывать, делить, умножать, вычитать; Строки можно только складывать! Строки и цифры складывать нельзя
 
-#КОДЫ
-# print('Hello world!')
-# name = input("Enter name ")
-# print("Hi", name)
-
-# first_name = input('Введите свое имя: )
-# last_name = input('Введите свою фамилию: )
-# age = input('Введите свой возраст: )
-# print(f'Имя: {first_name}, Фамилия: {last_name}, Возраст: {age}')
-
-#2 ПАРА
-# first_number = int(input('Ведите первое число: '))
-# second_number = int(input('Введите второе число: '))
-# print (first_number + second_number)
-# print (first_number - second_number)
-# print (first_number // second_number)
-# print (first_number / second_number)
-# print (first_number ** second_number)
-# print (first_number % second_number)
-# print (first_number * second_number)
-
-#3 ПАРА
+#3 ПАРА СПИСКИ
 # lst = [1, 2, 3.14, 'Hi', True]
-# print(lst[0])
+# print(lst[0]) #выведется 1
 #Список, картэжэ, словарь, множества
-#[start: stop: step] соответственно [0, 6, 2]
-#::-1 - срез начать с конца
-#::0 - с самого начала
-#::2 - через каждые два
+#[start: stop: step] соответственно [0, 6, 2]; ::-1 - срез начать с конца; ::0 - с самого начала; ::2 - через каждые два
 #МЕТОДЫ СПИСКОВ
 # lst.append(7)
 # lst.insert(0, 'hhh')
@@ -56,12 +29,7 @@
 #INDEX - используется для того, чтобы проверить, под каким номером в списке хранится элемент
 #SORT - сортирует список на месте
 
-# lst1 = ['вика', 'дура', 'моя', 'вика', 'лженаука']
-# tpl2 = tuple(lst1)
-# print(tpl2.count('вика'))
-# print(tpl2)
-
-#4 ПАРА
+#4 ПАРА ФУНКЦИЯ
 # def - определение, нужно писать перед началом кастомной функции, пробел, название функции(say_hi), в скобках аргумент
 #все что под названием функции - это тело функции
 # def say_hi(name):
@@ -69,10 +37,57 @@
 # #чтобы вызвать функцию, нужно написать ее название
 # say_hi('Maria')
 
-#5 и 6 ПАРА (подключили гитхаб)
-def double(number):
-    return 2 * number
-result1 = double(4)  # result1 = 8
-result2 = double(5)  # result2 = 10
-print(f"result1 = {result1}")  # result1 = 8
-print(f"result2 = {result2}")  # result2 = 10
+#5 и 6 ПАРА (подключили гитхаб) ЦИКЛ
+# def double(number):
+#     return 2 * number
+# result1 = double(4)  # result1 = 8
+# result2 = double(5)  # result2 = 10
+# print(f"result1 = {result1}")  # result1 = 8
+# print(f"result2 = {result2}")  # result2 = 10
+#функция без возвращающей конструкции - это процедура
+#возвращающая конструкция это return
+# double = lambda x: x*2 #можно только один раз использовать анонимную функцию
+# numbers = [1, 2, 3, 4, 5]
+# squared_numbers = list(map(lambda x: x ** 2, numbers)) #map - преобразование
+# print(squared_numbers)   # Вывод: [1, 4, 9, 16, 25]
+
+# while условное_выражение:
+#    инструкции
+# Цикл while проверяет истинность некоторого условия, и если условие истинно, то выполняет инструкции цикла
+# number = 1
+# while number < 5:
+#     print(f"number = {number}")
+#     number += 1 #number = 1 + number
+# print("Работа программы завершена")
+#
+# def decimal_to_binary(number):
+#     return bin(number)[2:]
+# def decimal_to_octal(number):
+#     return oct(number)[2:]
+# def decimal_to_hexadecimal(number):
+#     return hex(number)[2:].upper()
+# def main():
+#     print("Добро пожаловать в калькулятор перевода из десятичной системы!")
+#     number = int(input("Введите десятичное число: "))
+#     print("\nВыберите целевую систему исчисления:")
+#     print("1 - Двоичная")
+#     print("2 - Восьмеричная")
+#     print("3 - Шестнадцатеричная")
+#     choice = input("Ваш выбор: ")
+#     if choice == "1":
+#         print(f"Двоичное представление: {decimal_to_binary(number)}")
+#     elif choice == "2":
+#         print(f"Восьмеричное представление: {decimal_to_octal(number)}")
+#     elif choice == "3":
+#         print(f"Шестнадцатеричное представление: {decimal_to_hexadecimal(number)}")
+#     else:
+#         print("Некорректный выбор. Попробуйте снова.")
+# if __name__ == "__main__":
+#     main()
+
+def mass_fraction(mass_sol, mass_sub):
+    return mass_sub/mass_sol
+def vol_fraction(vol_mix, vol_sub):
+    return vol_sub/vol_mix
+def amount_of_substance(molar_concentration, vol_sub):
+    return molar_concentration * vol_sub
