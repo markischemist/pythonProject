@@ -1,9 +1,8 @@
+#1 и 2 ПАРА
 #КОД И ПОЯСНЕНИЕ
 #print - это команда в питоне, которая позволяет вам напечатать что-либо в консоли исполняемого файла
 #input - это команда в питоне, которая позволяет пользователю вводить какие-либо значения
 #list - преобразование в список
-
-#КАКИЕ-ТО ПРОСТО ЗАПИСИ ДЛЯ ТУПЫХ
 #красная точка это по сути остановка кода, там, где мы хотим. Нужно нажать на строку кода
 #Операторы - участники выражения, которые проводят операцию; Операнды - участники выражения, над которыми проводиться операция
 #необходимо использовать нормальные адекватные названия, которые содержат то, чем названа переменная; нельзя начинать название переменной с цифры!!!
@@ -85,9 +84,11 @@
 # if __name__ == "__main__":
 #     main()
 
-def mass_fraction(mass_sol, mass_sub):
-    return mass_sub/mass_sol
-def vol_fraction(vol_mix, vol_sub):
-    return vol_sub/vol_mix
-def amount_of_substance(molar_concentration, vol_sub):
-    return molar_concentration * vol_sub
+# def mass_fraction(mass_sol, mass_sub):
+#     return mass_sub/mass_sol
+# def vol_fraction(vol_mix, vol_sub):
+#     return vol_sub/vol_mix
+# def amount_of_substance(molar_concentration, vol_sub):
+#     return molar_concentration * vol_sub
+
+#7 ПАРА
