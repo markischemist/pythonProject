@@ -58,7 +58,7 @@
 #     print(f"number = {number}")
 #     number += 1 #number = 1 + number
 # print("Работа программы завершена")
-#
+
 # def decimal_to_binary(number):
 #     return bin(number)[2:]
 # def decimal_to_octal(number):
@@ -91,4 +91,15 @@
 # def amount_of_substance(molar_concentration, vol_sub):
 #     return molar_concentration * vol_sub
 
-#7 ПАРА
+#7 ПАРА БИБЛИОТЕКА
+# def fact(n):
+#     factorial = 1
+#     for l in range(2,n+1):
+#         factorial *= l #factorial = factorial * l
+#     return factorial
+# n = int(input("Enter the number "))
+# print(fact(n))
+# num = int(input("Enter the number "))
+# import math #вызывание библиотеки
+# print(math.factorial(num))
+#чтобы пользоваться библиотекой, нужно перейти в другой проект
